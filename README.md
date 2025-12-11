@@ -1,59 +1,45 @@
-<p align="center">
-  <img src="https://github.com/titaniumnetwork-dev/Pyrus/assets/99224452/d740378b-3fba-4470-8f06-3eefdae8a313" alt="PyrusLogo" width="250"/>
-</p>
+# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
 
-# Pyrus
+This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
 
-Pyrus is a beautiful, functional, and sleek web proxy that prioritizes customization and ease of use.
+Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
 
-![Code size](https://shields.io/github/languages/code-size/titaniumnetwork-dev/Pyrus?style=flat-square&logo=github)
-![Star count](https://shields.io/github/stars/titaniumnetwork-dev/Pyrus?style=flat-square&logo=github)
-![Made with coffee](https://img.shields.io/badge/made%20with-coffee-452515?style=flat-square&logo=coffeescript)
+## Set up this repository in your IDE
+This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
 
-# Features
+Before getting started, make sure you have the following things installed:
+* [Git](https://git-scm.com/download)
+* [Node](https://nodejs.org/en/download/), version 14.8 or later.
+* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
+* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-- 🌐 UV and Rammerhead support
-- 🎨 Multiple Themes to choose from
-- 🏬 Marketplace for Themes and Extensions
-- 🕶 Multiple site cloaking options
-- 🎮 50+ Games to choose from
-- 🌎 Support for **6** Languages
-- 🚀 High performance
-- 🔍 Multiple Search Engines to pick from
+To set up your local environment and start coding locally, do the following:
 
-# Deploying Pyrus
+1. Open your terminal and navigate to where you want to store the repo.
+1. Clone the repo by running `git clone <your-repository-url>`.
+1. Navigate to the repo's directory by running `cd <directory-name>`.
+1. Install the repo's dependencies by running `npm install` or `yarn install`.
+1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
+   Once you've installed the CLI globally, you can use it with any Wix site's repo.
 
-Deploying Pyrus is about as simple as it gets.
+For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
 
-1. Open your terminal and type `git clone https://github.com/titaniumnetwork-dev/Pyrus --recurse-submodules`
+## Write Velo code in your IDE
+Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
 
-2. Install pnpm with `npm i -g pnpm`.
+Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
 
-3. Then simply run `pnpm i` to install all node_modules, and build the frontend with `pnpm run build`; this shouldn't take more than a couple seconds.
+## Test your code with the Local Editor
+The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
 
-4. Finally, run `pnpm start` to actually serve Pyrus! It defaults to port 3000 for everything, but this can be specified in an env file.
+Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
 
-Congrats! You should now be running your very own instance of Pyrus! 🎉
+For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
 
-> [!WARNING]
-> Recursing all submodules will install [alu-games](https://github.com/wearrrrr/alu-games) as well. This repo contains _all_ games for Pyrus and is quite large! If you wish to skip it, simply remove `--recurse-submodules` from your clone command.
+## Preview and publish with the Wix CLI
+The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
 
-## What about Docker?
+Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
 
-Pyrus can be easily dockerized with the `Dockerfile` provided in the repository. Simply run `docker build -t alu .` to build the image, and then `docker run -p 3000:3000 alu` to run the container, and you're good to go!
-
-# Technologies
-
-- Ultraviolet by Titanium Network
-- Bare Server from TompHTTP
-- Wisp Server Node by Mercury Workshop
-- Rammerhead by binary-person
-- Astro from astro.build
-- Typescript
-- ExpressJS
-- Prettier
-- ESLint
-
-# License
-
-Pyrus is licensed under the GNU GPL v3.0 License as of 2/9/2024.
+## Invite contributors to work with you
+Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
